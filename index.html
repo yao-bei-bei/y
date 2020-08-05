@@ -14,6 +14,12 @@
             touch-action:none;
             touch-action:pan-y;
             font-size: 16px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
         }
         .el-upload,.el-upload-list__item{
             width: 100px!important;
@@ -106,7 +112,7 @@
         <div style="margin-top: 16px;color: #666666;">
             发布内容：
         </div>
-        <div style="position: relative;margin-top: 16px;margin-right: 8px">
+        <div style="position: relative;margin-top: 16px;">
         <textarea placeholder="请输入所发的动态" maxlength="1024" style="width: 100%" rows="10" v-model="textarea"></textarea>
         <span class="textarea_span"> {{textarea.length}}/1024</span>
         </div>
